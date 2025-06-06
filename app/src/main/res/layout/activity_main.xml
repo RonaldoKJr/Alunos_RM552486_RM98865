@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_background">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xtreme Events"
+        android:textColor="@android:color/white"
+        android:background="@color/orange_accent"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/white"
+        android:hint="Nome do local (cidade/bairro)"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/blue_primary" />
+
+    <EditText
+        android:id="@+id/et_tipo_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/white"
+        android:hint="Tipo do evento extremo"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/blue_primary" />
+
+    <EditText
+        android:id="@+id/et_grau_impacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/white"
+        android:hint="Grau de impacto (leve, moderado, severo)"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="text"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/blue_primary" />
+
+    <EditText
+        android:id="@+id/et_data_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/white"
+        android:hint="Data do evento (DD/MM/AAAA)"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="date"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/blue_primary" />
+
+    <EditText
+        android:id="@+id/et_num_pessoas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/white"
+        android:hint="Número estimado de pessoas afetadas"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/blue_primary" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingVertical="14dp"
+        android:backgroundTint="@color/orange_accent"
+        android:text="Incluir"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:elevation="2dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>
