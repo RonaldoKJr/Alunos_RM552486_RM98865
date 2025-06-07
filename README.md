@@ -1,4 +1,3 @@
-# GS13SIS
-# Alunos_552486_98865
-# Alunos_552486_98865
 # Alunos_RM552486_RM98865
+RM552486 - Enzo Luciano Duarte
+RM98865 - Ronaldo Kozan Júnior
